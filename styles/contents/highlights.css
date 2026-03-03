@@ -1,0 +1,31 @@
+.highlights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.highlights__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-surface);
+
+    padding: 1em;
+
+    border-radius: 0.5em;
+
+    box-shadow: var(--shadow-light);
+}
+
+.highlights__card svg {
+    height: 5em;
+    width: 5em;
+}
+
+.highlights__card p {
+    color: var(--color-text-muted);
+    margin: 2em 1em 0 1em;
+}

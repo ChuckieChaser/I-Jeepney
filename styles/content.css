@@ -1,0 +1,9 @@
+.content__section {
+    scroll-snap-align: start;
+
+    display: grid;
+    place-items: center;
+
+    min-height: 100vh;
+    padding: 8em 4em 4em;
+}

@@ -1,0 +1,46 @@
+.component__textfield {
+    position: relative;
+
+    height: 2rem;
+    width: 18rem;
+
+    &,
+    & * {
+        transition: 0.3s ease;
+    }
+
+    &:has(input:focus) svg {
+        color: var(--color-text);
+    }
+}
+
+.component__textfield svg {
+    pointer-events: none;
+
+    position: absolute;
+    top: 50%;
+    left: 0.5em;
+
+    transform: translateY(-50%);
+
+    color: var(--color-text-muted);
+
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.component__textfield input {
+    background-color: transparent;
+
+    height: 100%;
+    width: 100%;
+
+    padding: 0 2.25em;
+
+    border: 2px solid var(--color-text);
+    border-radius: 0.5em;
+
+    outline: none;
+
+    text-box-trim: trim-both;
+}

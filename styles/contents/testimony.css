@@ -1,0 +1,121 @@
+.testimony {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.testimony h1 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+}
+
+.testimony p {
+    color: var(--color-text-muted);
+
+    width: 50em;
+    text-align: center;
+}
+
+.testimony__roulette {
+    overflow: hidden;
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+    width: 100%;
+}
+
+.testimony__roulette-track {
+    flex: 1;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 300%;
+}
+
+.track__page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+
+    width: 100%;
+
+    transform: translateX(100%);
+}
+
+.track__page-card {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--color-surface);
+
+    width: 33.33%;
+
+    padding: 1em;
+
+    border-radius: 0.5em;
+    box-shadow: var(--shadow-light);
+}
+
+.card__rate {
+    align-self: flex-start;
+}
+
+.card__rate svg {
+    color: var(--color-secondary);
+}
+
+.card__message {
+    padding: 1em;
+}
+
+.card__message p {
+    width: 100%;
+    text-align: start;
+}
+
+.card__user {
+    align-self: flex-end;
+    margin-top: 1em;
+
+    font-family: var(--font-logo);
+    font-style: italic;
+
+    letter-spacing: 0.05em;
+    text-align: end;
+}
+
+.card__user span {
+    color: var(--color-text-muted);
+}
+
+.testimony__roulette-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.pagination__dot {
+    cursor: pointer;
+
+    height: 0.5em;
+    width: 3em;
+
+    background-color: var(--color-primary-light);
+
+    border-radius: 1em;
+    transition: 0.3s ease;
+
+    &.--active {
+        background-color: var(--color-primary);
+    }
+}

@@ -1,0 +1,62 @@
+.hero {
+    display: flex;
+
+    background-color: var(--color-primary-light);
+
+    background: url('/assets/images/background.jpg');
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 1;
+
+    padding: 0 10em;
+
+    & * {
+        position: relative;
+        z-index: 3;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+
+        background-color: var(--color-primary-light);
+        z-index: 2;
+    }
+}
+
+.hero__headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
+
+    width: 40em;
+}
+
+.hero__headline h1 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+}
+
+.hero__headline button {
+    height: 4rem;
+    width: 16rem;
+
+    margin-top: 1em;
+}
+
+.hero__graphics {
+    flex: 1;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero__graphics img {
+    height: 40em;
+    width: 40em;
+}

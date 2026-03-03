@@ -1,0 +1,69 @@
+.component__button {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25em;
+
+    height: 2em;
+    width: 8em;
+
+    border: 2px solid var(--color-text);
+    border-radius: 0.5em;
+
+    &,
+    & * {
+        transition: 0.3s ease;
+    }
+
+    &:hover {
+        box-shadow: var(--shadow-medium);
+    }
+
+    &.--primary {
+        background-color: var(--color-primary);
+        color: var(--color-background);
+
+        border-color: var(--color-primary);
+    }
+
+    &.--primary:hover {
+        background-color: var(--color-transparent);
+        color: var(--color-primary);
+    }
+
+    &.--secondary {
+        background-color: var(--color-text);
+        color: var(--color-accent);
+
+        border-color: var(--color-text);
+    }
+
+    &.--secondary:hover {
+        background-color: var(--color-accent);
+        color: var(--color-text);
+    }
+
+    &.--tertiary {
+        background-color: transparent;
+        border-radius: 0;
+    }
+
+    &.--tertiary:hover {
+        background-color: var(--color-text);
+        color: var(--color-background);
+    }
+}
+
+.component__button svg {
+    pointer-events: none;
+
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.component__button span {
+    font-weight: bold;
+    text-box-trim: trim-both;
+}
