@@ -28,6 +28,7 @@
     --color-accent-light: #fcd11625;
 
     --color-text: #1a1a1a;
+    --color-text-light: #1a1a1a25;
     --color-text-muted: #6c6c6c;
 
     --color-border: #e0e0e0;
@@ -60,11 +61,19 @@ html {
     scroll-snap-type: y mandatory;
 
     font-family: var(--font-body);
+
+    &.--modal-open {
+        overflow: hidden;
+    }
 }
 
 body {
     background-color: var(--color-background);
     color: var(--color-text);
+
+    &.--modal-open {
+        overflow: hidden;
+    }
 }
 
 svg {

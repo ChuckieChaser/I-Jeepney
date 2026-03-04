@@ -9,24 +9,43 @@
         transition: 0.3s ease;
     }
 
-    &:has(input:focus) svg {
+    &:hover svg {
+        color: var(--color-text);
+    }
+
+    &:has(input:focus) svg:first-child {
+        color: var(--color-primary);
+    }
+
+    &:hover svg:last-child,
+    &:has(input:focus) svg:last-child {
+        opacity: 1;
         color: var(--color-text);
     }
 }
 
 .component__textfield svg {
-    pointer-events: none;
-
     position: absolute;
     top: 50%;
-    left: 0.5em;
-
-    transform: translateY(-50%);
 
     color: var(--color-text-muted);
 
     height: 1.5em;
     width: 1.5em;
+
+    transform: translateY(-50%);
+
+    &:first-child {
+        pointer-events: none;
+        left: 0.5em;
+    }
+
+    &:last-child {
+        cursor: pointer;
+
+        opacity: 0;
+        right: 0.5em;
+    }
 }
 
 .component__textfield input {

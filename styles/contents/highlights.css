@@ -37,14 +37,6 @@
     }
 }
 
-.highlights__card-icon {
-    display: grid;
-    place-items: center;
-
-    padding: 1em;
-    border-radius: 100%;
-}
-
 .highlights__card svg {
     height: 4em;
     width: 4em;

@@ -18,6 +18,9 @@
         <link rel="stylesheet" href="./styles/contents/about.css" />
         <link rel="stylesheet" href="./styles/contents/testimony.css" />
 
+        <link rel="stylesheet" href="./styles/modals/authentication.css" />
+        <link rel="stylesheet" href="./styles/modals/navigation.css" />
+
         <link rel="stylesheet" href="./styles/components/button.css" />
         <link rel="stylesheet" href="./styles/components/textfield.css" />
 
@@ -25,6 +28,9 @@
         <script src="./scripts/header.js" defer></script>
 
         <script src="./scripts/testimony.js" defer></script>
+
+        <script src="./scripts/authentication.js" defer></script>
+        <script src="./scripts/navigation.js" defer></script>
     </head>
     <body>
         <!-- HEADER -->
@@ -44,11 +50,11 @@
             </div>
 
             <div class="header__action">
-                <button class="component__button --primary">
+                <button id="authenticationModalOpen" class="component__button --primary authentication__modal-open">
                     <span>LOGIN</span>
                 </button>
 
-                <svg class="header__action-menu">
+                <svg id="navigationMenuOpen">
                     <use href="./assets/icons/icons.svg#menu"></use>
                 </svg>
             </div>
@@ -65,7 +71,7 @@
                         pricing, and a touch of culture in every journey.
                     </p>
 
-                    <button class="component__button --tertiary">
+                    <button class="component__button --tertiary authentication__modal-open">
                         <span>Explore More</span>
                     </button>
                 </div>
@@ -77,11 +83,9 @@
 
             <section id="highlights" class="content__section highlights">
                 <div class="highlights__card">
-                    <div class="highlights__card-icon">
-                        <svg>
-                            <use href="./assets/icons/icons.svg#menu"></use>
-                        </svg>
-                    </div>
+                    <svg>
+                        <use href="./assets/icons/icons.svg#menu"></use>
+                    </svg>
 
                     <h3>Hamburger Menu</h3>
 
@@ -92,11 +96,9 @@
                 </div>
 
                 <div class="highlights__card">
-                    <div class="highlights__card-icon">
-                        <svg>
-                            <use href="./assets/icons/icons.svg#menu"></use>
-                        </svg>
-                    </div>
+                    <svg>
+                        <use href="./assets/icons/icons.svg#menu"></use>
+                    </svg>
 
                     <h3>Hamburger Menu</h3>
 
@@ -107,11 +109,9 @@
                 </div>
 
                 <div class="highlights__card">
-                    <div class="highlights__card-icon">
-                        <svg>
-                            <use href="./assets/icons/icons.svg#menu"></use>
-                        </svg>
-                    </div>
+                    <svg>
+                        <use href="./assets/icons/icons.svg#menu"></use>
+                    </svg>
 
                     <h3>Hamburger Menu</h3>
 
@@ -122,7 +122,13 @@
                 </div>
             </section>
 
-            <section id="about" class="content__section showcase">SHOWCASE SECTION</section>
+            <section id="showcase" class="content__section showcase">
+                <div class="showcase__carousel"></div>
+
+                <h1>SHOWCASE</h1>
+
+                <div class="showcase__carousel"></div>
+            </section>
 
             <section id="testimony" class="content__section testimony">
                 <h1>What Our Clients Say</h1>
@@ -416,7 +422,7 @@
 
                 <p>Reserve your jeepney ride now and skip the waiting, the waving, and the what-ifs.</p>
 
-                <button class="component__button --secondary">
+                <button class="component__button --secondary authentication__modal-open">
                     <span>Book Now >></span>
                 </button>
             </div>
@@ -436,9 +442,15 @@
             </div>
 
             <div class="footer__link">
-                <img src="./assets/images/facebook.png" alt="Facebook Icon" />
-                <img src="./assets/images/instagram.png" alt="Instagram Icon" />
-                <img src="./assets/images/x.png" alt="X Icon" />
+                <a href="#">
+                    <img src="./assets/images/facebook.png" alt="Facebook Icon" />
+                </a>
+                <a href="#">
+                    <img src="./assets/images/instagram.png" alt="Instagram Icon" />
+                </a>
+                <a href="#">
+                    <img src="./assets/images/x.png" alt="X Icon" />
+                </a>
             </div>
 
             <div class="footer__contact">
@@ -447,5 +459,112 @@
                 <span>Metro Manila, Philippines</span>
             </div>
         </footer>
+
+        <!-- SECTION: MENU -->
+        <section id="navigationMenu" class="menu">
+            <div class="menu__action">
+                <svg id="navigationMenuClose">
+                    <use href="./assets/icons/icons.svg#close"></use>
+                </svg>
+            </div>
+
+            <nav class="menu__navigations">
+                <a href="#hero">
+                    <span>h</span>
+                    <span>ero</span>
+                </a>
+
+                <a href="#highlights">
+                    <span>h</span>
+                    <span>ighlights</span>
+                </a>
+
+                <a href="#showcase">
+                    <span>s</span>
+                    <span>howcase</span>
+                </a>
+
+                <a href="#testimony">
+                    <span>t</span>
+                    <span>estimony</span>
+                </a>
+
+                <a href="#footer">
+                    <span>f</span>
+                    <span>ooter</span>
+                </a>
+
+                <a href="#">
+                    <span>l</span>
+                    <span>ogin</span>
+                </a>
+
+                <a href="#">
+                    <span>s</span>
+                    <span>ign up</span>
+                </a>
+            </nav>
+
+            <div class="menu__links">
+                <h1>Contact Us</h1>
+
+                <div class="menu__links-action">
+                    <a href="#">
+                        <img src="./assets/images/facebook.png" alt="Facebook Icon" />
+                    </a>
+                    <a href="#">
+                        <img src="./assets/images/instagram.png" alt="Instagram Icon" />
+                    </a>
+                    <a href="#">
+                        <img src="./assets/images/x.png" alt="X Icon" />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: AUTHENTICATION -->
+        <section id="authentication" class="authentication">
+            <div class="authentication__modal">
+                <div class="authentication__modal-action">
+                    <h3>I-Jeepney</h3>
+
+                    <svg id="authenticationModalClose">
+                        <use href="./assets/icons/icons.svg#close"></use>
+                    </svg>
+                </div>
+
+                <form class="authentication__modal-form">
+                    <h1>Welcome Back</h1>
+
+                    <div class="component__textfield">
+                        <svg>
+                            <use href="./assets/icons/icons.svg#user"></use>
+                        </svg>
+
+                        <input name="username" type="text" placeholder="Username" />
+                    </div>
+
+                    <div class="component__textfield --password">
+                        <svg>
+                            <use href="./assets/icons/icons.svg#password"></use>
+                        </svg>
+
+                        <input name="password" type="password" placeholder="Password" />
+
+                        <svg class="component__textfield-visibility">
+                            <use href="./assets/icons/icons.svg#visibility-off"></use>
+                        </svg>
+                    </div>
+
+                    <a href="#">Forgot Password?</a>
+
+                    <button class="component__button --primary">
+                        <span>Login</span>
+                    </button>
+
+                    <p>Don't have an account? <a href="#">Sign Up</a> Here!</p>
+                </form>
+            </div>
+        </section>
     </body>
 </html>

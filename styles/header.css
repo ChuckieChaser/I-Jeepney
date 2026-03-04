@@ -52,6 +52,6 @@
     gap: 1em;
 }
 
-.header__action-menu {
+.header__action svg {
     cursor: pointer;
 }
