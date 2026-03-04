@@ -18,11 +18,36 @@
     border-radius: 0.5em;
 
     box-shadow: var(--shadow-light);
+    transition: 0.3s ease;
+
+    &:hover {
+        box-shadow: var(--shadow-medium);
+    }
+
+    &:first-child {
+        background-color: var(--color-accent-light);
+    }
+
+    &:nth-child(2) {
+        background-color: var(--color-primary-light);
+    }
+
+    &:nth-child(3) {
+        background-color: var(--color-secondary-light);
+    }
+}
+
+.highlights__card-icon {
+    display: grid;
+    place-items: center;
+
+    padding: 1em;
+    border-radius: 100%;
 }
 
 .highlights__card svg {
-    height: 5em;
-    width: 5em;
+    height: 4em;
+    width: 4em;
 }
 
 .highlights__card p {
