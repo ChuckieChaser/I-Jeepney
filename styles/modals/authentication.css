@@ -24,6 +24,8 @@
 }
 
 .authentication__modal {
+    overflow: hidden;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,33 +66,41 @@
     cursor: pointer;
 }
 
-.authentication__modal-form {
-    display: flex;
+.modal__form {
+    display: none;
     flex-direction: column;
     gap: 1em;
+
+    &.--visible {
+        display: flex;
+    }
 }
 
-.authentication__modal-form h1 {
+.modal__form h1 {
     color: var(--color-primary);
 
     font-family: var(--font-heading);
 }
 
-.authentication__modal-form input {
+.modal__form input {
     background-color: var(--color-background) !important;
 }
 
-.authentication__modal-form a {
+.modal__form a {
     align-self: flex-end;
     color: var(--color-primary);
 }
 
-.authentication__modal-form button {
+.modal__form button {
     margin: 0 auto;
     margin-top: 1em;
 }
 
-.authentication__modal-form p {
+.modal__form p {
     margin-top: 1em;
     text-align: center;
+}
+
+.form__signup .--email {
+    margin-bottom: 1em;
 }

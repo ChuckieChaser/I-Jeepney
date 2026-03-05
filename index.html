@@ -494,12 +494,12 @@
                     <span>ooter</span>
                 </a>
 
-                <a href="#">
+                <a class="authentication__modal-open">
                     <span>l</span>
                     <span>ogin</span>
                 </a>
 
-                <a href="#">
+                <a class="authentication__modal-open-signup">
                     <span>s</span>
                     <span>ign up</span>
                 </a>
@@ -534,35 +534,87 @@
                 </div>
 
                 <form class="authentication__modal-form">
-                    <h1>Welcome Back</h1>
+                    <div id="loginForm" class="modal__form form__login --visible">
+                        <h1>Welcome Back</h1>
 
-                    <div class="component__textfield">
-                        <svg>
-                            <use href="./assets/icons/icons.svg#user"></use>
-                        </svg>
+                        <div class="component__textfield">
+                            <svg>
+                                <use href="./assets/icons/icons.svg#user"></use>
+                            </svg>
 
-                        <input name="username" type="text" placeholder="Username" />
+                            <input name="username" type="text" placeholder="Username" required />
+                        </div>
+
+                        <div class="component__textfield --password">
+                            <svg>
+                                <use href="./assets/icons/icons.svg#password"></use>
+                            </svg>
+
+                            <input name="password" type="password" placeholder="Password" required />
+
+                            <svg class="component__textfield-visibility">
+                                <use href="./assets/icons/icons.svg#visibility-off"></use>
+                            </svg>
+                        </div>
+
+                        <a href="#">Forgot Password?</a>
+
+                        <button class="component__button --primary">
+                            <span>Login</span>
+                        </button>
+
+                        <p>Don't have an account? <a href="#" id="authenticationChangeSignUp">Sign Up</a> Here!</p>
                     </div>
 
-                    <div class="component__textfield --password">
-                        <svg>
-                            <use href="./assets/icons/icons.svg#password"></use>
-                        </svg>
+                    <div id="signupForm" class="modal__form form__signup">
+                        <h1>Create Account</h1>
 
-                        <input name="password" type="password" placeholder="Password" />
+                        <div class="component__textfield --email">
+                            <svg>
+                                <use href="./assets/icons/icons.svg#email"></use>
+                            </svg>
 
-                        <svg class="component__textfield-visibility">
-                            <use href="./assets/icons/icons.svg#visibility-off"></use>
-                        </svg>
+                            <input name="email" type="email" placeholder="Email" required />
+                        </div>
+
+                        <div class="component__textfield">
+                            <svg>
+                                <use href="./assets/icons/icons.svg#user"></use>
+                            </svg>
+
+                            <input name="username" type="text" placeholder="Username" required />
+                        </div>
+
+                        <div class="component__textfield --password">
+                            <svg>
+                                <use href="./assets/icons/icons.svg#password"></use>
+                            </svg>
+
+                            <input name="password" type="password" placeholder="Password" required />
+
+                            <svg class="component__textfield-visibility">
+                                <use href="./assets/icons/icons.svg#visibility-off"></use>
+                            </svg>
+                        </div>
+
+                        <div class="component__textfield --password">
+                            <svg>
+                                <use href="./assets/icons/icons.svg#password"></use>
+                            </svg>
+
+                            <input name="confirmPassword" type="password" placeholder="Confirm Password" required />
+
+                            <svg class="component__textfield-visibility">
+                                <use href="./assets/icons/icons.svg#visibility-off"></use>
+                            </svg>
+                        </div>
+
+                        <button class="component__button --primary">
+                            <span>Sign Up</span>
+                        </button>
+
+                        <p>Already have an account? <a href="#" id="authenticationChangeLogin">Login</a> Here!</p>
                     </div>
-
-                    <a href="#">Forgot Password?</a>
-
-                    <button class="component__button --primary">
-                        <span>Login</span>
-                    </button>
-
-                    <p>Don't have an account? <a href="#">Sign Up</a> Here!</p>
                 </form>
             </div>
         </section>
