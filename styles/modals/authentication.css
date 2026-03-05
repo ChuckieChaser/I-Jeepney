@@ -104,3 +104,19 @@
 .form__signup .--email {
     margin-bottom: 1em;
 }
+
+.form__forgot .instruction {
+    margin-top: -0.25em;
+    width: 20em;
+
+    text-align: left;
+}
+
+.form__forgot .component__textfield {
+    width: 100% !important;
+}
+
+.form__forgot button {
+    width: fit-content !important;
+    padding: 1em 2em !important;
+}

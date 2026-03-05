@@ -1,5 +1,19 @@
 .highlights {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.highlights h1 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+}
+
+.highlights__card-group {
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 2em;

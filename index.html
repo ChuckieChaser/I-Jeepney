@@ -84,39 +84,43 @@
             </section>
 
             <section id="highlights" class="content__section highlights">
-                <div class="highlights__card">
-                    <img class="highlights__card-graphics" src="./assets/images/budget.svg" alt="Budget" />
+                <h1>Our Service Provides</h1>
 
-                    <h3>Budget Friendly</h3>
+                <div class="highlights__card-group">
+                    <div class="highlights__card">
+                        <img class="highlights__card-graphics" src="./assets/images/budget.svg" alt="Budget" />
 
-                    <p>
-                        Daily commuting shouldn't drain your wallet. Our jeepney rides are designed to stay affordable for students, workers, and
-                        everyday travelers. Whether you're heading to school, the office, or home after a long day, you can rely on fair fares that
-                        keep transportation accessible for everyone.
-                    </p>
-                </div>
+                        <h3>Budget Friendly</h3>
 
-                <div class="highlights__card">
-                    <img class="highlights__card-graphics" src="./assets/images/fast.svg" alt="Fast" />
+                        <p>
+                            Daily commuting shouldn't drain your wallet. Our jeepney rides are designed to stay affordable for students, workers, and
+                            everyday travelers. Whether you're heading to school, the office, or home after a long day, you can rely on fair fares
+                            that keep transportation accessible for everyone.
+                        </p>
+                    </div>
 
-                    <h3>Fast Service</h3>
+                    <div class="highlights__card">
+                        <img class="highlights__card-graphics" src="./assets/images/fast.svg" alt="Fast" />
 
-                    <p>
-                        Skip the long waits by the roadside. With quick booking and responsive drivers, you can secure a ride in just a few taps and
-                        get moving right away. Less waiting, more traveling—so you can focus on getting where you need to be on time.
-                    </p>
-                </div>
+                        <h3>Fast Service</h3>
 
-                <div class="highlights__card">
-                    <img class="highlights__card-graphics" src="./assets/images/cheap.svg" alt="Cheap" />
+                        <p>
+                            Skip the long waits by the roadside. With quick booking and responsive drivers, you can secure a ride in just a few taps
+                            and get moving right away. Less waiting, more traveling—so you can focus on getting where you need to be on time.
+                        </p>
+                    </div>
 
-                    <h3>Cheap Price</h3>
+                    <div class="highlights__card">
+                        <img class="highlights__card-graphics" src="./assets/images/cheap.svg" alt="Cheap" />
 
-                    <p>
-                        Reliable transport doesn't have to be expensive. Our platform keeps fares simple and commuter-friendly, giving you a
-                        dependable way to travel without worrying about high costs. It's everyday transportation made practical, efficient, and easy
-                        on the budget.
-                    </p>
+                        <h3>Cheap Price</h3>
+
+                        <p>
+                            Reliable transport doesn't have to be expensive. Our platform keeps fares simple and commuter-friendly, giving you a
+                            dependable way to travel without worrying about high costs. It's everyday transportation made practical, efficient, and
+                            easy on the budget.
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -634,11 +638,31 @@
 
                         <a href="#">Forgot Password?</a>
 
-                        <button class="component__button --primary">
+                        <button class="component__button --primary" type="submit">
                             <span>Login</span>
                         </button>
 
                         <p>Don't have an account? <a href="#" id="authenticationChangeSignUp">Sign Up</a> Here!</p>
+                    </div>
+
+                    <div id="forgotForm" class="modal__form form__forgot">
+                        <h1>Forgot Password?</h1>
+
+                        <p class="instruction">Enter your email address and we'll send you instructions to reset your password.</p>
+
+                        <div class="component__textfield --email">
+                            <svg>
+                                <use href="./assets/icons/icons.svg#email"></use>
+                            </svg>
+
+                            <input name="email" type="email" placeholder="Email" required />
+                        </div>
+
+                        <button class="component__button --primary" type="submit">
+                            <span>Send Reset Instructions</span>
+                        </button>
+
+                        <p class="remember">Remembered your password? <a href="#" id="authenticationChangeLoginFromForgot">Login</a> Here!</p>
                     </div>
 
                     <div id="signupForm" class="modal__form form__signup">
@@ -684,7 +708,7 @@
                             </svg>
                         </div>
 
-                        <button class="component__button --primary">
+                        <button class="component__button --primary" type="submit">
                             <span>Sign Up</span>
                         </button>
 
