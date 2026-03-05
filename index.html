@@ -15,6 +15,7 @@
 
         <link rel="stylesheet" href="./styles/contents/hero.css" />
         <link rel="stylesheet" href="./styles/contents/highlights.css" />
+        <link rel="stylesheet" href="./styles/contents/showcase.css" />
         <link rel="stylesheet" href="./styles/contents/about.css" />
         <link rel="stylesheet" href="./styles/contents/testimony.css" />
 
@@ -31,6 +32,7 @@
 
         <script src="./scripts/authentication.js" defer></script>
         <script src="./scripts/navigation.js" defer></script>
+        <script src="./scripts/showcase.js" defer></script>
     </head>
     <body>
         <!-- HEADER -->
@@ -119,11 +121,95 @@
             </section>
 
             <section id="showcase" class="content__section showcase">
-                <div class="showcase__carousel"></div>
+                <div class="showcase__carousel --up">
+                    <div class="showcase__carousel-item">
+                        <img src="./assets/images/placeholder.jpg" alt="Image 1" />
+                        <span>Caption 1</span>
+                    </div>
 
-                <h1>SHOWCASE</h1>
+                    <div class="showcase__carousel-item">
+                        <img src="./assets/images/placeholder.jpg" alt="Image 2" />
+                        <span>Caption 2</span>
+                    </div>
 
-                <div class="showcase__carousel"></div>
+                    <div class="showcase__carousel-item">
+                        <img src="./assets/images/placeholder.jpg" alt="Image 3" />
+                        <span>Caption 3</span>
+                    </div>
+
+                    <div class="showcase__carousel-item">
+                        <img src="./assets/images/placeholder.jpg" alt="Image 4" />
+                        <span>Caption 4</span>
+                    </div>
+
+                    <!-- Dupes -->
+
+                    <div class="showcase__carousel-item">
+                        <img src="./assets/images/placeholder.jpg" alt="Image 1" />
+                        <span>Caption 1</span>
+                    </div>
+
+                    <div class="showcase__carousel-item">
+                        <img src="./assets/images/placeholder.jpg" alt="Image 2" />
+                        <span>Caption 2</span>
+                    </div>
+
+                    <div class="showcase__carousel-item">
+                        <img src="./assets/images/placeholder.jpg" alt="Image 3" />
+                        <span>Caption 3</span>
+                    </div>
+
+                    <div class="showcase__carousel-item">
+                        <img src="./assets/images/placeholder.jpg" alt="Image 4" />
+                        <span>Caption 4</span>
+                    </div>
+                </div>
+
+                <h1>Riding Across Towns and Cities</h1>
+
+                <div class="showcase__carousel --down">
+                    <div class="showcase__carousel-item">
+                        <img src="./assets/images/placeholder.jpg" alt="Image 5" />
+                        <span>Caption 5</span>
+                    </div>
+
+                    <div class="showcase__carousel-item">
+                        <img src="./assets/images/placeholder.jpg" alt="Image 6" />
+                        <span>Caption 6</span>
+                    </div>
+
+                    <div class="showcase__carousel-item">
+                        <img src="./assets/images/placeholder.jpg" alt="Image 7" />
+                        <span>Caption 7</span>
+                    </div>
+
+                    <div class="showcase__carousel-item">
+                        <img src="./assets/images/placeholder.jpg" alt="Image 8" />
+                        <span>Caption 8</span>
+                    </div>
+
+                    <!-- Dupes -->
+
+                    <div class="showcase__carousel-item">
+                        <img src="./assets/images/placeholder.jpg" alt="Image 5" />
+                        <span>Caption 5</span>
+                    </div>
+
+                    <div class="showcase__carousel-item">
+                        <img src="./assets/images/placeholder.jpg" alt="Image 6" />
+                        <span>Caption 6</span>
+                    </div>
+
+                    <div class="showcase__carousel-item">
+                        <img src="./assets/images/placeholder.jpg" alt="Image 7" />
+                        <span>Caption 7</span>
+                    </div>
+
+                    <div class="showcase__carousel-item">
+                        <img src="./assets/images/placeholder.jpg" alt="Image 8" />
+                        <span>Caption 8</span>
+                    </div>
+                </div>
             </section>
 
             <section id="testimony" class="content__section testimony">
@@ -156,21 +242,20 @@
                                     </svg>
 
                                     <svg>
-                                        <use href="./assets/icons/icons.svg#star"></use>
+                                        <use href="./assets/icons/icons.svg#star-filled"></use>
                                     </svg>
                                 </div>
 
                                 <div class="card__message">
                                     <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum modi repudiandae voluptates accusamus
-                                        voluptatem consequuntur officiis perferendis nobis, ab fuga quaerat, aperiam numquam exercitationem sapiente
-                                        saepe nesciunt. Sunt, neque. Consectetur!
+                                        “I use this almost every day going to work. Booking a jeepney ride is quick and the price is way cheaper than
+                                        other ride apps. It honestly made my daily commute much easier.”
                                     </p>
                                 </div>
 
                                 <div class="card__user">
-                                    <h3>Chuckie</h3>
-                                    <span>Client</span>
+                                    <h3>Mark Dela Cruz</h3>
+                                    <span>Passenger</span>
                                 </div>
                             </div>
 
@@ -199,15 +284,14 @@
 
                                 <div class="card__message">
                                     <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum modi repudiandae voluptates accusamus
-                                        voluptatem consequuntur officiis perferendis nobis, ab fuga quaerat, aperiam numquam exercitationem sapiente
-                                        saepe nesciunt. Sunt, neque. Consectetur!
+                                        “Great service overall. The fares are fair and it's easy to book a ride. Sometimes it takes a bit longer
+                                        during rush hour, but it's still very useful.”
                                     </p>
                                 </div>
 
                                 <div class="card__user">
-                                    <h3>Chuckie</h3>
-                                    <span>Client</span>
+                                    <h3>Carlo Mendoza</h3>
+                                    <span>Passenger</span>
                                 </div>
                             </div>
 
@@ -236,15 +320,14 @@
 
                                 <div class="card__message">
                                     <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum modi repudiandae voluptates accusamus
-                                        voluptatem consequuntur officiis perferendis nobis, ab fuga quaerat, aperiam numquam exercitationem sapiente
-                                        saepe nesciunt. Sunt, neque. Consectetur!
+                                        “I like using this for my trips to school. The price is student-friendly and the drivers I've encountered were
+                                        polite. Looking forward to more available rides in my area.”
                                     </p>
                                 </div>
 
                                 <div class="card__user">
-                                    <h3>Chuckie</h3>
-                                    <span>Client</span>
+                                    <h3>Jessa Villanueva</h3>
+                                    <span>Student Passenger</span>
                                 </div>
                             </div>
                         </div>
@@ -265,7 +348,7 @@
                                     </svg>
 
                                     <svg>
-                                        <use href="./assets/icons/icons.svg#star-filled"></use>
+                                        <use href="./assets/icons/icons.svg#star"></use>
                                     </svg>
 
                                     <svg>
@@ -275,15 +358,14 @@
 
                                 <div class="card__message">
                                     <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum modi repudiandae voluptates accusamus
-                                        voluptatem consequuntur officiis perferendis nobis, ab fuga quaerat, aperiam numquam exercitationem sapiente
-                                        saepe nesciunt. Sunt, neque. Consectetur!
+                                        “The concept is really good and the fares are affordable. I just hope the app gets more drivers soon so rides
+                                        become available faster in some areas.”
                                     </p>
                                 </div>
 
                                 <div class="card__user">
-                                    <h3>Chuckie</h3>
-                                    <span>Client</span>
+                                    <h3>Patrick Lim</h3>
+                                    <span>Passenger</span>
                                 </div>
                             </div>
 
@@ -312,15 +394,14 @@
 
                                 <div class="card__message">
                                     <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum modi repudiandae voluptates accusamus
-                                        voluptatem consequuntur officiis perferendis nobis, ab fuga quaerat, aperiam numquam exercitationem sapiente
-                                        saepe nesciunt. Sunt, neque. Consectetur!
+                                        “As a driver, this platform helps me find passengers faster instead of waiting on the road. The system is easy
+                                        to use and it helps increase my daily trips.”
                                     </p>
                                 </div>
 
                                 <div class="card__user">
-                                    <h3>Chuckie</h3>
-                                    <span>Client</span>
+                                    <h3>Ramon Bautista</h3>
+                                    <span>Jeepney Driver Partner</span>
                                 </div>
                             </div>
 
@@ -349,15 +430,14 @@
 
                                 <div class="card__message">
                                     <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum modi repudiandae voluptates accusamus
-                                        voluptatem consequuntur officiis perferendis nobis, ab fuga quaerat, aperiam numquam exercitationem sapiente
-                                        saepe nesciunt. Sunt, neque. Consectetur!
+                                        “Very convenient, especially during busy mornings. I booked a ride in just a few taps and the driver arrived
+                                        quickly. Affordable and reliable.”
                                     </p>
                                 </div>
 
                                 <div class="card__user">
-                                    <h3>Chuckie</h3>
-                                    <span>Client</span>
+                                    <h3>Angela Ramos</h3>
+                                    <span>Passenger</span>
                                 </div>
                             </div>
                         </div>
@@ -378,7 +458,7 @@
                                     </svg>
 
                                     <svg>
-                                        <use href="./assets/icons/icons.svg#star-filled"></use>
+                                        <use href="./assets/icons/icons.svg#star"></use>
                                     </svg>
 
                                     <svg>
@@ -388,15 +468,14 @@
 
                                 <div class="card__message">
                                     <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum modi repudiandae voluptates accusamus
-                                        voluptatem consequuntur officiis perferendis nobis, ab fuga quaerat, aperiam numquam exercitationem sapiente
-                                        saepe nesciunt. Sunt, neque. Consectetur!
+                                        “Useful for commuting and the price is definitely cheaper than most ride services. The experience was good
+                                        overall, but there's still room for improvement.”
                                     </p>
                                 </div>
 
                                 <div class="card__user">
-                                    <h3>Chuckie</h3>
-                                    <span>Client</span>
+                                    <h3>Liza Fernandez</h3>
+                                    <span>Passenger</span>
                                 </div>
                             </div>
                         </div>
@@ -614,5 +693,11 @@
                 </form>
             </div>
         </section>
+
+        <!-- DIVISION: SPOTLIGHT -->
+        <div id="showcaseSpotlight" class="showcase__spotlight">
+            <img src="" alt="Spotlight Image" />
+            <span></span>
+        </div>
     </body>
 </html>

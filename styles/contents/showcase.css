@@ -1,0 +1,140 @@
+.showcase {
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+
+    &:has(.showcase__carousel .showcase__carousel-item:hover) .showcase__carousel {
+        animation-play-state: paused;
+    }
+
+    &:has(.showcase__carousel .showcase__carousel-item:hover) .showcase__carousel-item:not(:hover) {
+        filter: brightness(0.25);
+    }
+}
+
+.showcase h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--font-heading);
+    font-size: 2rem;
+
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.showcase__carousel {
+    overflow: hidden;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: max-content;
+
+    &,
+    & * {
+        transition: 0.3s ease;
+    }
+
+    &.--up {
+        flex: 1;
+        align-self: flex-start;
+
+        margin-top: 4em;
+        animation: scroll-left 30s linear infinite;
+    }
+
+    &.--down {
+        flex: 1;
+        align-self: flex-end;
+
+        animation: scroll-right 30s linear infinite;
+    }
+}
+
+.showcase__carousel-item {
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+        transition-delay: 0.25s;
+    }
+}
+
+.showcase__carousel-item img {
+    height: 15em;
+}
+
+.showcase__carousel-item span {
+    display: none;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scroll-right {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(50%);
+    }
+}
+
+.showcase__spotlight {
+    opacity: 0;
+
+    pointer-events: none;
+
+    position: fixed;
+    inset: 0;
+    z-index: 500;
+
+    display: grid;
+    place-items: center;
+
+    background-color: rgba(0, 0, 0, 0.75);
+    transition: 0.3s ease;
+
+    &.--visible {
+        opacity: 1;
+    }
+
+    &.--visible img {
+        scale: 1;
+    }
+}
+
+.showcase__spotlight img {
+    object-fit: contain;
+
+    max-height: 80%;
+    max-width: 80%;
+
+    box-shadow: var(--shadow-medium);
+
+    scale: 0.95;
+    transition: 0.3s ease;
+}
+
+.showcase__spotlight span {
+    position: absolute;
+    left: auto;
+    right: auto;
+    bottom: 7em;
+
+    background-color: var(--color-text);
+    color: var(--color-background);
+
+    padding: 1em;
+}
