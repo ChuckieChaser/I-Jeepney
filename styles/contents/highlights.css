@@ -13,6 +13,8 @@
 
     background-color: var(--color-surface);
 
+    min-height: 25em;
+
     padding: 1em;
 
     border-radius: 0.5em;
@@ -22,6 +24,10 @@
 
     &:hover {
         box-shadow: var(--shadow-medium);
+    }
+
+    &:hover .highlights__card-graphics {
+        scale: 1.25;
     }
 
     &:first-child {
@@ -37,12 +43,21 @@
     }
 }
 
-.highlights__card svg {
-    height: 4em;
-    width: 4em;
+.highlights__card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+
+    margin-top: 1em;
 }
 
 .highlights__card p {
     color: var(--color-text-muted);
     margin: 2em 1em 0 1em;
+}
+
+.highlights__card-graphics {
+    height: 10em;
+    width: 10em;
+
+    transition: 0.3s ease-out;
 }
